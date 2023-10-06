@@ -2,7 +2,7 @@
 
 Portfolio em desenvolvimento...
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas:
 
 - Vite
 - React
