@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { PaddingContainer, FlexContainer, Heading, ParaText, BlueText, IconContainer } from '../styles/Global.styled'
 import { BsLinkedin, BsInstagram, BsGithub } from 'react-icons/bs'
-import { Particle, ShowcaseImgCard, ShowcaseParticleContainer } from '../styles/Showcase.styled'
+import { ButtonCV, Particle, ShowcaseImgCard, ShowcaseParticleContainer } from '../styles/Showcase.styled'
 import foto from '../assets/foto.png'
 import Background from '../assets/particle.png'
 import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
@@ -38,26 +38,31 @@ const Showcase = () => {
               </Heading>
 
               <ParaText as='p' top='2rem' bottom='4rem'>
-              Olá! Sou Rafael Cândido, um entusiasta da tecnologia
-              com 18 anos de idade e uma paixão ardente pelo desenvolvimento
-              Front End. Ao longo dos anos, mergulhei de cabeça no mundo da
-              programação web, e essa jornada tem sido incrivelmente 
-              empolgante<BlueText>.</BlueText>
+                Olá! Sou Rafael Cândido, um entusiasta da tecnologia
+                com 18 anos de idade e uma paixão ardente pelo desenvolvimento
+                Front End. Ao longo dos anos, mergulhei de cabeça no mundo da
+                programação web, e essa jornada tem sido incrivelmente 
+                empolgante<BlueText>.</BlueText>
               </ParaText>
 
-              <FlexContainer gap='20px' responsiveflex>
+              <FlexContainer gap='20px' align='center' responsiveflex='true'>
+                <a href="https://www.linkedin.com/in/rafael-candido-68803a248/" target='_blank'>
                 <IconContainer color='blue' size='1.5rem'>
                     <BsLinkedin />
                 </IconContainer>
-                
-                <IconContainer color='blue' size='1.5rem'>
-                    <BsInstagram />
-                </IconContainer>
-
+                </a>
+    
+                 <a href="https://github.com/CandidoRafael">
                 <IconContainer color='blue' size='1.5rem'>
                     <BsGithub />
                 </IconContainer>
-
+                 </a>
+                 
+                 <ButtonCV
+                 href='https://www.dropbox.com/scl/fi/09qapsq0w32bcwsm0i3og/Curriculo-Pronto.pdf?rlkey=djp59aupij789tz3r286at922&dl=0' 
+                 target='_blank'>
+                    Currículo
+                 </ButtonCV>
               </FlexContainer>
             </motion.div>
 

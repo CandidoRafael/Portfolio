@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
-import { PaddingContainer, Heading, BlueText, FlexContainer, Button } from '../styles/Global.styled'
-import { ContactForm, FormInput, FormLabel } from '../styles/Footer.styled'
+import { PaddingContainer, Heading, BlueText  } from '../styles/Global.styled'
 import { fadeInBottomVariant } from '../utils/Variants'
 import Form from './Form'
 
@@ -34,8 +33,6 @@ const Footer = () => {
         </Heading>
 
         <Form />
-
-        
     </PaddingContainer>
   )
 }

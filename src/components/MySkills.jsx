@@ -14,7 +14,7 @@ const MySkills = () => {
           responsiveright='1rem'
         >
          <FlexContainer  
-           responsiveflex  
+           responsiveflex='true'  
            responsivedirection='column-reverse'
            fullwidthchild='true'
            >
@@ -42,25 +42,23 @@ const MySkills = () => {
             initial='hidden'
             whileInView='visible'
           >
-            <Heading as='h4' size='h4'>
-                My Skills
-            </Heading>
-
+            
             <Heading as='h2' size='h2' top='.5rem'>
-                What <BlueText>I can do</BlueText>
+               Minhas <BlueText>Habilidades</BlueText>
             </Heading>
 
             <ParaText top='2rem' bottom='1.5rem'>
-                As a Developer, i have a wide range of experience in
-                front-end development. I am proficient in Javascript,
-                Typescript, React, HTML and CSS. My strong experience in 
-                building responsive and dynamic user interfaces using React and
-                Zustand has allowed me to create engagin and interactive web applications
+            Como Desenvolvedor, tenho experiência em
+              desenvolvimento front-end. Sou proficiente em Javascript,
+              TypeScript, React, HTML e CSS. Além disso , sempre busco 
+              criar interfaces responsivas e atraentes aos olhos do usuário.
             </ParaText>
 
             <ParaText>
-                I have experience in using React for building scalable and maintainable
-                applications and a bult of stuffs 
+              Um ponto forte adicional é o uso de bibliotecas 
+              que agregam o desenvolvimento da aplicação. 
+              Como React-Hook-Form, ZOD, React-Query, Zustand, ContextAPI...
+
             </ParaText>
           </motion.div>
          </FlexContainer>

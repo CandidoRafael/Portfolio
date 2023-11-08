@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-
+import { Theme } from '../utils/Theme'
 
 export const NavbarContainer = styled.div`
     position: fixed;
@@ -8,7 +8,7 @@ export const NavbarContainer = styled.div`
     left: 0;
     z-index: 10;
     transition: all .3s ease-in;
-    background-color: ${({ bgcolor }) => bgcolor};
+    background-color: ${(props) => (props.bgcolor ? Theme.colors.primary_light : 'transparent')};
 `
 
 export const Logo = styled.p`

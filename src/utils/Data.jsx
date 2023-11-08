@@ -1,8 +1,9 @@
-import { FaReact, FaCss3Alt } from 'react-icons/fa'
-import { SiStyledcomponents, SiFirebase, SiJavascript, SiTypescript } from 'react-icons/si'
-import Project1 from '../assets/Project1.png'
-import Project2 from '../assets/Project2.png'
-import Project3 from '../assets/Project3.png'
+import { FaReact, FaNodeJs } from 'react-icons/fa'
+import { SiStyledcomponents, SiJavascript, SiTypescript } from 'react-icons/si'
+import { BiLogoMongodb } from 'react-icons/bi'
+import Project1 from '../assets/DevDoodle.png'
+import Project2 from '../assets/Cointrackr.png'
+import Project3 from '../assets/MelindaRestaurante.png'
 
 export const Skills = [
 
@@ -28,13 +29,13 @@ export const Skills = [
     },
     {
         id:4,
-        tech: 'CSS',
-        icon: <FaCss3Alt />
+        tech: 'MongoDB',
+        icon: <BiLogoMongodb />
     },
     {
         id:5,
-        tech: 'Firebase',
-        icon: <SiFirebase />
+        tech: 'Node.JS',
+        icon: <FaNodeJs />
     },
   
 ] 
@@ -43,25 +44,47 @@ export const Skills = [
 export const projectDetails = [
     {
         id:0,
-        project_name: 'Restaurant App',
-        project_desc: "It typicall includes features such as a menu with prices, the ability to place an order, and the option to pay for the order directly through the app. Somw restaurant applications also allow the customers to make reservations, view ans the restaurant`s location and hours, and access special deals and promotions",
-        tech_stack: ['React JS', 'Tailwind', 'Firebase'],
+        project_name: 'DevDoodle Blog',
+        project_link: 'https://devdoodle.vercel.app',
+        project_github: 'https://github.com/CandidoRafael/Front_DevDoodle',
+        project_desc: `
+          Esse projeto é um blog dedicado ao mundo da tecnologia, 
+          repleto de informações valiosas, dicas e tutorias, 
+          basta criar sua conta e já é possível criar uma publicação.
+          Utilizei tecnologias do mercado, como React-hook-form, React-Query, ContextAPI e ZOD.
+        `,
+        tech_stack: ['React', 'Typescript', 'Express', 'MongoDB'],
         project_img: Project1,
         reverse: false
     },
     {
         id:1,
-        project_name: 'AnimaMax',
-        project_desc: "An Anime Streaming Plataform built with ReactJS. User can sign up and favorite animes to see later in another opportunity",
-        tech_stack: ['React JS', 'Tailwind', 'Firebase'],
+        project_name: 'CoinTrackr',
+        project_link: 'https://cointrackr.vercel.app',
+        project_github: 'https://github.com/CandidoRafael/CoinTracker-app-master',
+        project_desc: `
+         É uma aplicação para o gerenciamento financeiro e 
+         investimentos construída com React, Zustand, Firebase 
+         e React-Charts. Ele permite que você defina metas financeiras, 
+         rastreie gastos e analise por meio de gráficos dinâmicos.
+        `,
+        tech_stack: ['React', 'Zustand', 'Firebase'],
         project_img: Project2,
         reverse: true,
     },
     {
         id:2,
-        project_name: 'Food Peek',
-        project_desc: "Lading Page para hamburgueria onde se pode fazer pedidos , criar conta e acompanhar o pedido em tempo atraves de um geoloalizador",
-        tech_stack: ['HTML', 'CSS', 'Javascript'],
+        project_name: 'Melinda Restaurante',
+        project_link: 'https://comanda-eletronica.vercel.app',
+        project_github: 'https://github.com/Melinda-Resturante',
+        project_desc: `
+          Aplicação para o Melinda Resturante, onde é responsável 
+          pelo gerenciamento de comandas eletronicas, estoque,
+          produtos, cadastro de funcionários no sistema entre outras funcionalidades. Ele está sendo
+          desenvolvido com React, Express, Node.JS e MySQL.
+
+        `,
+        tech_stack: ['React', 'Node.JS', 'MySQL'],
         project_img: Project3,
         reverse: false
     }

@@ -26,3 +26,20 @@ export const Particle = styled.img`
     bottom: ${({ bottom }) => bottom};
     transform: rotate(${({ rotate }) => rotate});
 `
+
+export const ButtonCV = styled.a`
+    cursor: pointer;
+    padding: .7rem 2rem;
+    background-color: #fff;
+    text-decoration: none;
+    color: #222;
+    border-radius: .3rem;
+    border: 1px solid transparent;
+    transition: all .5s ease-in;
+
+    &:hover {
+        border: 1px solid #fff;
+        background-color: transparent;
+        color:#fff;
+    }
+`

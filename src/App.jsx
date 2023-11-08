@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'styled-components'
+import { StyleSheetManager, ThemeProvider } from 'styled-components'
 import { Theme } from './utils/Theme'
 import { Container, MainBody } from './styles/Global.styled'
 
@@ -11,7 +11,8 @@ import Footer from './components/Footer'
 function App() {
   
   return (
-    <ThemeProvider theme={Theme}>
+    <StyleSheetManager shouldForwardProp={(prop) => prop !== 'bgcolor'}>
+     <ThemeProvider theme={Theme}>  
       <MainBody>
         <Container>
           <Navbar />
@@ -22,6 +23,8 @@ function App() {
         </Container>
       </MainBody>
     </ThemeProvider>
+    </StyleSheetManager>
+
   )
 }
 

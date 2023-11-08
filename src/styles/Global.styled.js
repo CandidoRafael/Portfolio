@@ -104,11 +104,17 @@ export const IconContainer = styled.div`
             return;    
         }
     }};
+    transition: all .5s ease-in;
+
+    &:hover {
+        color: #fff;
+    }
 `
 
 export const Button = styled.a`
     display: inline-block;
     width: max-content;
+    text-decoration: none;
     padding: 1rem 2rem;
     color: ${({ theme }) => theme.colors.white};
     background-color: ${({ theme }) => theme.colors.primary_light};

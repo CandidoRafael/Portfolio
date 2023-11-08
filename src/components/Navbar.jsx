@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FlexContainer, PaddingContainer, Container, BlueText } from '../styles/Global.styled'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { Theme } from '../utils/Theme'
 import { NavbarContainer, Logo, MenuIcon } from '../styles/Navbar.styled'
 import NavMenu from './layout/NavMenu'
+
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)
@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <div>
-        <NavbarContainer bgcolor={ sticky ? Theme.colors.primary_light : 'transparent' }>
+        <NavbarContainer bgcolor={sticky}>
           <PaddingContainer 
             top='1.2rem' 
             bottom='1.2rem'

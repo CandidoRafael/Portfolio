@@ -21,9 +21,11 @@ const Project = ({ data }) => {
                 {data.project_name}
             </Heading>
 
+            <a href={data.project_github} target='_blank'>
             <IconContainer color='blue' size='2rem'>
                 <FaGithub />
             </IconContainer>
+            </a>
           </FlexContainer>
 
           <PaddingContainer top='1rem'>
@@ -38,7 +40,9 @@ const Project = ({ data }) => {
             {data.project_desc}
           </ParaText>
 
-          <Button>Visit web site</Button>
+          
+            <Button href={data.project_link} target='_blank'>Deploy</Button>
+        
         </motion.div>
 
         <ProjectImageContainer 
